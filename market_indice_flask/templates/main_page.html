@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LMI</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+<nav data-toggled="false" data-transitionable="false">
+    <div id="nav-logo-section" class="nav-section">
+        <a href="#">
+            <i class="fa-solid fa-dumpster-fire"></i>
+        </a>
+    </div>
+    <div id="nav-mobile-section">
+        <div id="nav-link-section" class="nav-section">
+            <a href="/">Home</a>
+            <a href="/lmi">Lithuanian milk indice</a>
+        </div>
+        <div id="nav-social-section" class="nav-section">
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-codepen"></i>
+            </a>
+        </div>
+        <div id="nav-contact-section" class="nav-section">
+            <a href="#">GET IN TOUCH</a>
+        </div>
+    </div>
+    <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</nav>
+<div>
+    {% block lpieno %}{% endblock %}
+</div>
+</body>
+
+<style>
+    p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    }
+</style>
+</html>
