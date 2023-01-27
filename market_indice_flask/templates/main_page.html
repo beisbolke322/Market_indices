@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href={{url_for('static', filename='css/navbar.css')}} type="text/css" />
     <title>LMI</title>
-    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
@@ -42,10 +42,14 @@
     {% block lpieno %}{% endblock %}
 </div>
 </body>
-
 <style>
-    p {
-    font-family: "Lucida Console", "Courier New", monospace;
+    body {
+      font-family: "Rubik", sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0px;
+      overflow: hidden;
     }
 </style>
 </html>

@@ -2,8 +2,15 @@
 {% block lpieno %}
 <div>
     <p>Auga group</p>
-    <img src="{{url_for('static', filename='lmi_companies.png')}}" />
-    <br>
+<!--    <img src="{{url_for('static', filename='lmi_companies.png')}}" />-->
+    <br />
     {{skaiciai}}
+    <br />
+    {{skaiciu_lent}}
+    <br />
+    <p>Auga: {{last_close_aug}}€
+        Rokiškio sūris: {{last_close_rsu}}€
+        Compiled: {{last_close}}
+    </p>
 </div>
 {% endblock %}
