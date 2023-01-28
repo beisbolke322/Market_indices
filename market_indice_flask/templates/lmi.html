@@ -1,8 +1,9 @@
 {% extends "main_page.html" %}
 {% block lpieno %}
 <div>
-    <p>Auga group</p>
+    <p></p>
 <!--    <img src="{{url_for('static', filename='lmi_companies.png')}}" />-->
+    {{disp_graph}}
     <br />
     {{skaiciai}}
     <br />
@@ -10,7 +11,9 @@
     <br />
     <p>Auga: {{last_close_aug}}€
         Rokiškio sūris: {{last_close_rsu}}€
-        Compiled: {{last_close}}
+        Compiled: {{last_close_t}}
     </p>
+    <br />
+    {{data1}}
 </div>
 {% endblock %}
